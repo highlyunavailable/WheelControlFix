@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>WheelControlFix</AssemblyName>
+    <RootNamespace>WheelControlFix</RootNamespace>
+    <OutputPath>$(MSBuildThisFileDirectory)bin\</OutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <DefineConstants>TORCH</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sandbox.Game">
+      <HintPath>$(SE_GAME_DIR)/Bin64/Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>$(SE_GAME_DIR)/Bin64/VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>$(SE_GAME_DIR)/Bin64/VRage.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>$(SE_GAME_DIR)/Bin64/VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Audio">
+      <HintPath>$(SE_GAME_DIR)/Bin64/VRage.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="HavokWrapper">
+      <HintPath>$(SE_GAME_DIR)/Bin64/HavokWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Torch">
+      <HintPath>$(TORCH_DIR)/Torch.dll</HintPath>
+    </Reference>
+    <Reference Include="Torch.API">
+      <HintPath>$(TORCH_DIR)/Torch.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

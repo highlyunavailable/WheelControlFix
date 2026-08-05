@@ -1,0 +1,19 @@
+# Visual Studio / MSBuild / dotnet CLI
+obj/
+bin/
+*.user
+*.suo
+*.cache
+*.log
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# NuGet
+packages/
+*.nupkg
+
+# OS
+.DS_Store
+Thumbs.db
